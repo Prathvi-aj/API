@@ -114,7 +114,9 @@ Request:
         "city":"Jabalpur"
     }
 		
-		Response :
+		
+                
+  Response :
 		[
     {
         "hotel_id": 1001,
@@ -151,6 +153,7 @@ Request :
         "city": "Jabalpur",
         "date": "2022-09-09"
     }
+
 
 Response :
 		[
@@ -257,5 +260,9 @@ will be stored in an RDBMS like MySQL.
 Method: DELETE
 
 Delete Hotel by hotel ID:[http://localhost:8080/hotelbooking/delete-hotel-by-id/{hotel_id}]
+
+
 Delete User by user ID:[http://localhost:8080/hotelbooking/delete-user-by-id/{user_id}]
+
+
 Delete Review by review ID:[http://localhost:8080/hotelbooking/delete-review-by-id/{review_id}]
