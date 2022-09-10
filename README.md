@@ -1,10 +1,12 @@
 # Hotel Booking API Back End 
 
+
+
 How to Run:
-1.Download api Repositary
-2.open api folder on eclipse
-3.install mysql 8 version
-4.execute ApiApplication.java file as java application or spring boot app
+- Download api Repositary
+- open api folder on eclipse
+- install mysql 8 version
+- execute ApiApplication.java file as java application or spring boot app
 
 
 
@@ -190,6 +192,8 @@ Response :
 Method : POST
 URI: localhost:8081/hotelbooking/add-user
 
+
+
 Request :
 
     {
@@ -199,6 +203,9 @@ Request :
         "user_city": "Indor",
         "email_id": "abhishek@gmail.com"
     }
+
+
+
 Response:
 [
     {
@@ -210,9 +217,14 @@ Response:
     }
 ]
 
+
+
 2. Update user:
 Method: PUT
 URI:http://localhost:8080/api/hotelbooking/update-user-info
+
+
+
 Request:
 
     {
@@ -222,6 +234,10 @@ Request:
         "user_city": "Indor",
         "email_id": "abhishek@gmail.com"
     }
+
+
+
+
 Response
 [
     {
@@ -232,6 +248,7 @@ Response
         "email_id": "abhishek@gmail.com"
     }
 ]
+
 
 
 • Service for a user to add reviews for a hotel. A review will include rating and comments.
