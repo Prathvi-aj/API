@@ -24,9 +24,9 @@ public class Controller {
 	private ReviewService reviewservice;
 	
 	
-	@GetMapping("/hotelbooking/hotels")
-	public List<Hotel> getHotels() {
-		return this.hotelservice.getHotels();
+	@PostMapping("/hotelbooking/hotels")
+	public List<Hotel> getHotels(@RequestBody Hotel hotel) {
+		return this.hotelservice.getHotels(hotel);
 	}
 	
 	@PutMapping("/hotelbooking/update-hotel-info")
@@ -34,7 +34,7 @@ public class Controller {
 		return this.hotelservice.updateHotel(hotel);
 	}
 	
-	@PostMapping("/hotelbooking/hotels")
+	@PostMapping("/hotelbooking/add-hotel")
 	public Hotel addHotel(@RequestBody Hotel hotel) {
 		return this.hotelservice.addHotel(hotel);
 	}

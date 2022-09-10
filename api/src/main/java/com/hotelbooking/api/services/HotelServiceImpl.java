@@ -17,9 +17,10 @@ public class HotelServiceImpl implements HotelService {
 	
 	
 	@Override
-	public List<Hotel> getHotels() {
-		// TODO Auto-generated method stub		
-		return hotelDao.findAll();
+	public List<Hotel> getHotels(Hotel hotel) {
+		// TODO Auto-generated method stub	
+		
+		return hotelDao.findByCityAndDate(hotel.getcity(),hotel.getDate());
 	}
 
 	

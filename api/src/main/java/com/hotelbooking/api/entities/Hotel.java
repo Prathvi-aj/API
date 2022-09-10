@@ -18,10 +18,10 @@ public class Hotel {
 	private String airConditinor;
 	private String meal;
 	private long room_charge;
-	private String hotel_city;
+	private String city;
 	private Date date;
 	public Hotel(long hotel_id, String hotel_name, int rooms, int stars, String wifiFacility, String resaturent,
-			String airConditinor, String meal, long room_charge, String hotel_city, Date date) {
+			String airConditinor, String meal, long room_charge, String city, Date date) {
 		super();
 		this.hotel_id = hotel_id;
 		this.hotel_name = hotel_name;
@@ -32,7 +32,7 @@ public class Hotel {
 		this.airConditinor = airConditinor;
 		this.meal = meal;
 		this.room_charge = room_charge;
-		this.hotel_city = hotel_city;
+		this.city = city;
 		this.date = date;
 	}
 	public long getHotel_id() {
@@ -89,11 +89,11 @@ public class Hotel {
 	public void setRoom_charge(long room_charge) {
 		this.room_charge = room_charge;
 	}
-	public String getHotel_city() {
-		return hotel_city;
+	public String getcity() {
+		return city;
 	}
-	public void setHotel_city(String hotel_city) {
-		this.hotel_city = hotel_city;
+	public void setcity(String city) {
+		this.city = city;
 	}
 	public Date getDate() {
 		return date;
@@ -105,11 +105,11 @@ public class Hotel {
 	public String toString() {
 		return "Hotel [hotel_id=" + hotel_id + ", hotel_name=" + hotel_name + ", rooms=" + rooms + ", stars=" + stars
 				+ ", wifiFacility=" + wifiFacility + ", resaturent=" + resaturent + ", airConditinor=" + airConditinor
-				+ ", meal=" + meal + ", room_charge=" + room_charge + ", hotel_city=" + hotel_city + ", date=" + date
+				+ ", meal=" + meal + ", room_charge=" + room_charge + ", city=" + city + ", date=" + date
 				+ ", getHotel_id()=" + getHotel_id() + ", getHotel_name()=" + getHotel_name() + ", getRooms()="
 				+ getRooms() + ", getStars()=" + getStars() + ", getWifiFacility()=" + getWifiFacility()
 				+ ", getResaturent()=" + getResaturent() + ", getAirConditinor()=" + getAirConditinor() + ", getMeal()="
-				+ getMeal() + ", getRoom_charge()=" + getRoom_charge() + ", getHotel_city()=" + getHotel_city()
+				+ getMeal() + ", getRoom_charge()=" + getRoom_charge() + ", getcity()=" + getcity()
 				+ ", getDate()=" + getDate() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode()
 				+ ", toString()=" + super.toString() + "]";
 	}
