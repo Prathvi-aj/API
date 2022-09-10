@@ -16,17 +16,29 @@ Technologies
 - Javax
 
 Application starts on localhost port 8080, URI and Method TYpe:
+
 POST- [http://localhost:8080/hotelbooking/hotels]
+
 PUT- [http://localhost:8080/api/hotelbooking/update-hotel-info]
+
 POST- [http://localhost:8080/hotelbooking/add-hotel]
+
 DELETE- [http://localhost:8080/hotelbooking/delete-hotel-by-id/{hotel_id}]
+
 GET- [http://localhost:8080/hotelbooking/user]
+
 PUT- [http://localhost:8080/api/hotelbooking/update-user-info*]
+
 POST- [http://localhost:8080/hotelbooking/add-user]
+
 DELETE- [http://localhost:8080/hotelbooking/delete-user-by-id/{user_id}]
+
 GET- [http://localhost:8080/hotelbooking/review]
+
 PUT- [http://localhost:8080/api/hotelbooking/update-review-info*]
+
 POST- [http://localhost:8080/hotelbooking/add-review]
+
 DELETE- [http://localhost:8080/hotelbooking/delete-review-by-id/{review_id}]
  
 
